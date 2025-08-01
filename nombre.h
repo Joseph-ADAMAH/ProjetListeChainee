@@ -1,43 +1,41 @@
 #ifndef NOMBRE_H_INCLUDED
 #define NOMBRE_H_INCLUDED
-
-typedef struct Liste Liste ;
+typedef struct Liste  Liste ;
 struct Liste
 {
     int data;
     Liste* next ;
 };
 
-int afficheMenu();
-void Construction_liste();
-void AfficherListe(Liste* tete);
+void  menu();//Fonction d' affichage de menu
+
+void construction_liste_depart(Liste** tete);//Fonction de connstruction de la liste de départ
+//void afficher_Liste(Liste*tete);//Fonction d' affichage de liste
+
+//int nbreElement(Liste* tete);
+
+int entrerNombre(); // Sera utiliser pour tout entrer d'ajout
+
+int demandePosition() ;// Fonction sera utiliser pour demander les position d'ajout ou de suppression
+
+void ajout_Debut(Liste** tete);//Fonction d' ajpout en début de liste
+
+void ajout_Position(Liste** tete);//Fonction d' ajpout en début de liste
+
+void ajout_Fin(Liste** tete);//Fonction d' ajpout en début de liste
 
 
-void longueurListe(Liste** tete);
+/*void supprimerTete(Liste** tete);
 
-int EntrerNombre() // Sera utiliser pour tout entrer d'ajout
+void supprimerMilieu(Liste** tete);
 
-int DemandePosition() // Fonction sera utiliser pour demander les position d'ajout ou de suppression
+void supprimerQueue(Liste** tete);
 
-void AjoutDebut(Liste** tete);
+void modifier(Liste** tete);
 
-void AjoutMilieu(Liste** tete);
+void supprimerTout(Liste** tete);*/
 
-void AjoutFin(Liste** tete);
-
-//void Supprimer(Nbre** tete, int controle);
-
-void SupprimerTete(Liste** tete);
-
-void SupprimerMilieu(Liste** tete);
-
-void SupprimerQueue(Liste** tete);
-
-void Modifier(Liste** tete);
-
-void SupprimerTout(Liste** tete);
-
-void Quitter(Liste** tete);
+void quitter();//Fonction pour quitter le programme
 
 
 #endif // NOMBRE_H_INCLUDED
