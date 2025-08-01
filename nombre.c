@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <locale.h>
 #include "nombre.h"
 
 int EntrerNombre() // Sera utiliser pour tout entrer d'ajout
@@ -167,5 +168,17 @@ void TrierCroissant(Liste **tete)
     }
 }
 
+void Quitter(Liste **tete)
+{
+    Liste *precedent, *parcour = *tete;
+
+    while(parcour != NULL)
+    {
+        precedent = parcour;
+        parcour = parcour->suivant;
+        free(precedent);
+    }
+    printf("\nA la prochaine !!\n");
+}
 
 

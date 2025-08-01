@@ -1,8 +1,8 @@
 /**********************************************************************/
-/*                  Projet de fin d'Année                              *
+/*                  Projet de fin d'Année                             *
 *                  ---------------------                              *
-* Groupes N°                                                          *
-* ---------                                                           *
+* Groupes N° 4                                                        *
+* ------------                                                        *
 * Membres du Groupes:                                                 *
 * ------------------                                                  *
 *                                                                     *
@@ -23,6 +23,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+#include "nombre.h"
 //#include
 
 int main()

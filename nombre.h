@@ -15,9 +15,9 @@ void AfficherListe(Liste* tete);
 
 int longueurListe(Liste* tete);
 
-int EntrerNombre() // Sera utiliser pour tout entrer d'ajout
+int EntrerNombre(); // Sera utiliser pour tout entrer d'ajout
 
-int DemandePosition() // Fonction sera utiliser pour demander les position d'ajout ou de suppression
+int DemandePosition(); // Fonction sera utiliser pour demander les position d'ajout ou de suppression
 
 void AjoutDebut(Liste** tete);
 
