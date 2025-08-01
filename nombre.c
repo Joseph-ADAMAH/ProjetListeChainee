@@ -92,5 +92,80 @@ void AfficherListe(Liste* tete)
     }
     printf("\n")
 }
+// Les fonctions suivantes sont des fonctions qui vont trier la liste en utilisant le trie à bulle
+void TrierDecroissant(Liste **tete)
+{
+     bool DesordreListe = true; // Variable du type bool du trier à bulle
+    int echangeur; // Variable pour échanger les valeur
+    Liste *parcour; // Pour parcourir la liste
+    parcour = *tete;
+    if (parcour == NULL)
+    {
+        printf("\nLa liste est vide\n");
+    }
+    else if (parcour->suivant == NULL)
+    {
+        printf("\nIl n'y a qu'un seul élément dans la liste");
+    }
+    else
+    {
+        while(DesordreListe)
+        {
+            DesordreListe = false;
+            parcour = *tete;
+
+            while(parcour->suivant != NULL)
+            {
+
+                if (parcour->nombre <  parcour->suivant->nombre)
+                {
+                    echangeur = parcour->nombre;
+                    parcour->nombre = parcour->suivant->nombre;
+                    parcour->suivant->nombre = echangeur;
+                    DesordreListe = true;
+                }
+                parcour = parcour->suivant;
+            }
+        }
+    }
+}
+
+void TrierCroissant(Liste **tete)
+{
+     bool DesordreListe = true; // Variable du type bool du trier à bulle
+    int echangeur;
+    Liste *parcour;
+    parcour = *tete;
+    if (parcour == NULL)
+    {
+        printf("\nLa liste est vide\n");
+    }
+    else if (parcour->suivant == NULL)
+    {
+        printf("\nIl n'y a qu'un seul élément dans la liste");
+    }
+    else
+    {
+        while(DesordreListe)
+        {
+            DesordreListe = false;
+            parcour = *tete;
+
+            while(parcour->suivant != NULL)
+            {
+
+                if (parcour->nombre >  parcour->suivant->nombre)
+                {
+                    echangeur = parcour->nombre;
+                    parcour->nombre = parcour->suivant->nombre;
+                    parcour->suivant->nombre = echangeur;
+                    DesordreListe = true;
+                }
+                parcour = parcour->suivant;
+            }
+        }
+    }
+}
+
 
 

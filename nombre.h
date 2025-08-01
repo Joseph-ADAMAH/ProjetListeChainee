@@ -37,6 +37,8 @@ void Modifier(Liste** tete);
 
 void SupprimerTout(Liste** tete);
 
+void TrierDecroissant(Liste** tete);
+void TrierCroissant(Liste** tete);
 void Quitter(Liste** tete);
 
 
