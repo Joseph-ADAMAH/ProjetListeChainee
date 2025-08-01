@@ -13,7 +13,7 @@ void Construction_liste();
 void AfficherListe(Liste* tete);
 
 
-void longueurListe(Liste** tete);
+int longueurListe(Liste* tete);
 
 int EntrerNombre() // Sera utiliser pour tout entrer d'ajout
 
