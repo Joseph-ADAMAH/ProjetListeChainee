@@ -13,17 +13,17 @@ void Construction_liste();
 void AfficherListe(Liste* tete);
 
 
-void longueurListe(Liste** tete);
+void longueurListe(Liste* tete);
 
 int EntrerNombre() // Sera utiliser pour tout entrer d'ajout
 
 int DemandePosition() // Fonction sera utiliser pour demander les position d'ajout ou de suppression
 
-void AjoutDebut(Liste** tete);
+void AjoutDebut(Liste** tete, int controle);
 
-void AjoutMilieu(Liste** tete);
+void AjoutMilieu(Liste* tete, int controle);
 
-void AjoutFin(Liste** tete);
+void AjoutFin(Liste* tete, int controle);
 
 //void Supprimer(Nbre** tete, int controle);
 
