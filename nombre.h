@@ -1,5 +1,6 @@
 #ifndef NOMBRE_H_INCLUDED
 #define NOMBRE_H_INCLUDED
+#include "nombre.h"
 
 typedef struct Liste Liste ;
 struct Liste
@@ -9,15 +10,16 @@ struct Liste
 };
 
 int afficheMenu();
+
 void Construction_liste();
-void AfficherListe(Liste* tete);
 
+void AfficherListe(Liste* tete, int controle);
 
-void longueurListe(Liste* tete);
+void longueurListe(Liste* tete, int controle);
 
-int EntrerNombre() // Sera utiliser pour tout entrer d'ajout
+int EntrerNombre(); // Sera utiliser pour tout entrer d'ajout
 
-int DemandePosition() // Fonction sera utiliser pour demander les position d'ajout ou de suppression
+int DemandePosition(); // Fonction sera utiliser pour demander les position d'ajout ou de suppression
 
 void AjoutDebut(Liste** tete, int controle);
 

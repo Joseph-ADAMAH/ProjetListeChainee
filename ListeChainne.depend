@@ -1,6 +1,10 @@
 # depslib dependency file v1.0
-1754089725 source:c:\users\dell\desktop\listes\main.c
+1754099382 source:c:\users\dell\desktop\listes\main.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
+	"nombre.h"
+
+1754099806 c:\users\dell\desktop\listes\nombre.h
+	"nombre.h"
 

@@ -245,3 +245,4 @@ void longueurListe(Liste* tete, int controle)
     system("pause");
 
 }
+
