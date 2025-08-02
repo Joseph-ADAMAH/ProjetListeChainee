@@ -352,5 +352,3 @@ void ajout_Fin(Liste **tete)
 
     printf("\n");
 }
-//Fonction quitter
-
